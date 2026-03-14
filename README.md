@@ -21,10 +21,11 @@ Here you can find the laboratory works and practical assignments I completed dur
 
 ```text
 📁.
- ├── 📁 1 semester
- |    └── 📝 Labs (1-8)
- ├── 📁 2 semester
- |    └── 📝 Labs (1)
+ ├── 📁 Prg_labs
+ |    ├── 📁 1 semester
+ |    |    └── 📝 Labs (1-8)
+ |    └── 📁 2 semester
+ |         └── 📝 Labs (1)
  ├── 📄LICENCE
  └── 📍README
 ```
@@ -33,6 +34,6 @@ Here you can find the laboratory works and practical assignments I completed dur
 <div align="display:flex; gap:10px; align-items:center;">
 
 **Author**  
-[Viktoriia Umanets ](https://github.com/cyjiky) 
+[Viktoriia Umanets](https://github.com/cyjiky) 
 
 </div>
