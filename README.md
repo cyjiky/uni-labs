@@ -1,6 +1,8 @@
 # 🎓 University Laboratory Works
 
-> **Igor Sikorsky Kyiv Polytechnic Institute (KPI)** **Specialty:** 121 Software Engineering
+> **Igor Sikorsky Kyiv Polytechnic Institute (KPI)**
+
+> **Specialty:** 121 Software Engineering
 
 > **Year:** 1st 
 
