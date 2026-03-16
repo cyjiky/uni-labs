@@ -68,7 +68,8 @@ The project is currently under development
 
 ---
 
-Ця лабораторна робота виконується в [Clockly](https://github.com/cyjiky/Clockly) репозиторії.
+# 👾 Lab02: Налаштування проекту 
+> Ця лабораторна робота виконується в [Clockly](https://github.com/cyjiky/Clockly) репозиторії.
 
 ## Опис 
 
