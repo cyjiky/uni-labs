@@ -25,18 +25,18 @@ Clockly is a mobile calendar application. The project is designed to be an advan
 📁.                                 project folder
  ├── 📁 backend                     server-side logic
  |    ├── 📁 auth                   authentication & authorization
- |    ├── 📁 DTOs                   data transfer objects 
+ |    ├── 📁 DTOs                   data transfer objects
  |    ├── 📁 routers                api route definition
- |    ├── 📁 postgre                
+ |    ├── 📁 postgre                postgres setup via SQLAlchemy
  |    ├── 📁 services               logic layer
- |    |    ├── 📁 core services     
- |    |    ├── 📁 postgre service   
- |    |    └── 📁 redis             
+ |    |    ├── 📁 core services     core servies responsible for business logic
+ |    |    ├── 📁 postgre service   postgres database service
+ |    |    └── 📁 redis             redis database service (currently disabled)
  |    ├── 📁 utils                  shared helper functions
  |    ├── 📝 main.py                backend entry point
  |    ├── ⚙️ .env                   environment variables (excluded from git)
- |    ├── ⚙️ .gitignore             vcs ignore 
- |    ├── 🐳 Containerfile          backend container build 
+ |    ├── ⚙️ .gitignore             vcs ignore
+ |    ├── 🐳 Containerfile          backend container build
  |    └── 📝 pyproject.toml         python dependencies & config
  ├── 📁 frontend                    client-side application (development has not started)
  |    ├── 📁 app                    application routing & pages
@@ -46,11 +46,11 @@ Clockly is a mobile calendar application. The project is designed to be an advan
  |    ├── 📁 hooks                  custom state & lifecycle hooks
  |    ├── 📝 package.json           frontend dependencies & scripts
  |    ├── ⚙️ .env                   environment variables (excluded from git)
- |    ├── ⚙️ .gitignore             vcs ignore 
- |    └── 🐳 Containerfile          frontend container build 
+ |    ├── ⚙️ .gitignore             vcs ignore
+ |    └── 🐳 Containerfile          frontend container build
  ├── 🐳 compose.yaml                docker compose orchestration
  ├── 📄LICENCE                      LICENCE
- └── 📍README.md                    project description 
+ └── 📍README.md                    project description
 ```
 
 ## Execution Results
@@ -58,7 +58,7 @@ Clockly is a mobile calendar application. The project is designed to be an advan
 1. Added a ``.gitignore`` file to both parts of the project (backend and frontend)
 2. For the backend, we chose to use ``pyproject.toml`` instead of ``requirements.txt.`` This decision is justified by the transition to modern Python packaging standards and more convenient dependency management
     - For the frontend, a separate ``package.json`` file was created to manage all necessary dependencies and libraries
-3. The project is published under the ``MIT License``
+3. The project is published under the ``Apache License``
 4. Containers were created and configured to simplify launching the application. The naming convention (``Containerfile``) was chosen deliberately so that the configurations can be used not only with Docker but also with similar alternative tools, depending on user preference
 5. A comprehensive [README](https://github.com/cyjiky/Clockly/blob/main/README.md) was written in the main repository, containing startup instructions and descriptions of the project architecture and structure
 6. The project is being developed by two contributors ([@cyjiky](https://github.com/cyjiky) $\cdot$ [@yeghor](https://github.com/yeghor))
@@ -81,18 +81,18 @@ Clockly — це мобільний додаток-календар. Проек�
 📁.                                 project folder
  ├── 📁 backend                     server-side logic
  |    ├── 📁 auth                   authentication & authorization
- |    ├── 📁 DTOs                   data transfer objects 
+ |    ├── 📁 DTOs                   data transfer objects
  |    ├── 📁 routers                api route definition
- |    ├── 📁 postgre                
+ |    ├── 📁 postgre                postgres setup via SQLAlchemy
  |    ├── 📁 services               logic layer
- |    |    ├── 📁 core services     
- |    |    ├── 📁 postgre service   
- |    |    └── 📁 redis             
+ |    |    ├── 📁 core services     core servies responsible for business logic
+ |    |    ├── 📁 postgre service   postgres database service
+ |    |    └── 📁 redis             redis database service (currently disabled)
  |    ├── 📁 utils                  shared helper functions
  |    ├── 📝 main.py                backend entry point
  |    ├── ⚙️ .env                   environment variables (excluded from git)
- |    ├── ⚙️ .gitignore             vcs ignore 
- |    ├── 🐳 Containerfile          backend container build 
+ |    ├── ⚙️ .gitignore             vcs ignore
+ |    ├── 🐳 Containerfile          backend container build
  |    └── 📝 pyproject.toml         python dependencies & config
  ├── 📁 frontend                    client-side application (development has not started)
  |    ├── 📁 app                    application routing & pages
@@ -102,21 +102,20 @@ Clockly — це мобільний додаток-календар. Проек�
  |    ├── 📁 hooks                  custom state & lifecycle hooks
  |    ├── 📝 package.json           frontend dependencies & scripts
  |    ├── ⚙️ .env                   environment variables (excluded from git)
- |    ├── ⚙️ .gitignore             vcs ignore 
- |    └── 🐳 Containerfile          frontend container build 
+ |    ├── ⚙️ .gitignore             vcs ignore
+ |    └── 🐳 Containerfile          frontend container build
  ├── 🐳 compose.yaml                docker compose orchestration
  ├── 📄LICENCE                      LICENCE
- └── 📍README.md                    project description 
+ └── 📍README.md                    project description
 ```
 
 
 ## Результати виконання
 
 1. Додано ``.gitignore`` файл для всіх частин проекту (backend and frontend).
-1. Добавлен ``.gitignore`` в обе части проекта (бэкенд и фронтенд)
 2. У бекенд було обрано та узгоджено написання ``pyproject.toml`` замість ``requirements.txt``. Аргуменовано переходом на сучасні стандарти упаковки Python-проектів та зручнішим управлінням залежностями.
     - у фронтенді створено окремий файл ``package.json``, що містить у собі всі залежності та необхідні бібліотеки
-3. Проект опублікований під ліцензією ``MIT License``
+3. Проект опублікований під ліцензією ``Apache License``
 4. Також створені та налаштовані контейнери для спрощеного запуску програми (іменування аргументовані тим, щоб можливо було використовувати ці контейнери не тільки для Docker, а й схожих програм залежно від переваг)
 5. Написаний докладний [README](https://github.com/cyjiky/Clockly/blob/main/README.md) в основному репозиторії з інструкцією для запуску, описом архітектури та структури проекту
 6. Розробка здійснюється двома контриб'юторами ([@cyjiky](https://github.com/cyjiky) $\cdot$ [@yeghor](https://github.com/yeghor))

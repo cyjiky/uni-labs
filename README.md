@@ -17,7 +17,7 @@ Here you can find the laboratory works and practical assignments I completed dur
     <img width="40px" img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
 </div>
 
-## Strukture
+## Structure
 
 ```text
 📁.
