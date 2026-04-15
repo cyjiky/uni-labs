@@ -4,7 +4,7 @@
 
 > **Specialty:** 121 Software Engineering
 
-> **Year:** 1st 
+> **Year:** 1st
 
 > **Group:** IM-o51
 
@@ -22,18 +22,19 @@ Here you can find the laboratory works and practical assignments I completed dur
 ```text
 📁.
  ├── 📁 Prg_labs
- |    ├── 📁 1 semester
+ |    ├── 📁 semester_1
  |    |    └── 📝 Labs (1-8)
- |    └── 📁 2 semester
- |         └── 📝 Labs (1)
+ |    └── 📁 semester_2
+ |         └── 📝 Labs (1-3)
  ├── 📄LICENCE
  └── 📍README
 ```
+
 ---
 
 <div align="display:flex; gap:10px; align-items:center;">
 
 **Author**  
-[Viktoriia Umanets](https://github.com/cyjiky) 
+[Viktoriia Umanets](https://github.com/cyjiky)
 
 </div>
