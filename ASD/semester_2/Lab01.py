@@ -41,33 +41,22 @@ def recursion_3(x, n, i=1, F=None):
     return F + recursion_3(x, n, i + 1, cur_F)
 
 
-def test_func(x, n):
-    cur_sum = 0.0
-    F = x
-    for i in range(1, n + 1):
-        cur_sum += F
-        calculate = (x**2) / (4 * (i**2) + 2 * i)
-        F = F * calculate
-
-    return cur_sum
+# n = int(input("n: "))
+# x = float(input("x: "))
 
 
-_n = 5
-x_val = [1.0, 2.0, 3.0, 4.0, 5.0]
-for i in x_val:
-    _sum = test_func(i, _n)
-    _val = math.sinh(i)
+n = 5
+x = 0.1
 
-    diff = abs(_sum - _val)
-    print(f"{i}\t{diff}")
 
-# res_1 = recursion_1(x, n)
-# cur_F, res_2 = recursion_2(x, n)
-# res_3 = recursion_3(x, n)
-# result = math.sinh(x)
+res_1 = recursion_1(x, n)
+cur_F, res_2 = recursion_2(x, n)
+res_3 = recursion_3(x, n)
+result = math.sinh(x)
 
-# print(f"n: {n}, x: {x}")
-# print(f"res1: {res_1}")
-# print(f"res2: {res_2}")
-# print(f"res3: {res_3}")
-# print(f"result (shx): {result}")
+
+print(f"n: {n}, x: {x}")
+print(f"res1: {res_1}")
+print(f"res2: {res_2}")
+print(f"res3: {res_3}")
+print(f"result (shx): {result}")
